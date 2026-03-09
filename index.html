@@ -42,8 +42,21 @@ button{
 
 <script>
 function sayThanks() {
+    // Change message
     document.getElementById("message").innerHTML =
     "On behalf of the dorm, thank you for your cooperation.";
+
+    // Change button color to blue
+    const button = document.getElementById("promiseButton");
+    button.style.backgroundColor = "blue";
+
+    // Add flash animation
+    button.classList.add("flash");
+
+    // Remove the class after animation ends so it can flash again if clicked
+    setTimeout(() => {
+        button.classList.remove("flash");
+    }, 500);
 }
 </script>
 
