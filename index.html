@@ -36,8 +36,13 @@ button{
 
 <p>Respect the 20 other members. The air deserves peace.</p>
 
-<button onclick="alert('Thank you for respecting the dorm! )">
-I Promise
-</button>
+<button onclick="sayThanks()">I Promise</button>
+
+<p id="message"></p>
+
+<script>
+function sayThanks() {
+    document.getElementById("message").innerHTML = "on behalf of the dorm, Thank you for your cooperation";
+}
 
 </body>
